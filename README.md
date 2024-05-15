@@ -14,6 +14,7 @@ EXPOSE 8080
 CMD ["catalina.sh", "run"]
 ````
 ```Bash
+git clone https://github.com/jaisonyi/altoromutual-dockerfile.git
 docker build -t altoromutual .
 docker run -p 8080:8080 -d --name altoromutual altoromutual
 docker stop altoromutual
